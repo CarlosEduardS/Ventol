@@ -1,6 +1,6 @@
 # Ventol
 
-**Version:** v0.0.0
+**Version:** v1.1.0
 
 Um aplicativo mobile desenvolvido com React Native e Expo para controle e gerenciamento.
 
@@ -20,22 +20,33 @@ Ventol é um aplicativo mobile que oferece funcionalidades de navegação, contr
 
 ```
 Ventol/
-├── components/          # Componentes reutilizáveis
-│   ├── button-nav.tsx
-│   ├── cards.tsx
-│   └── Navigator-Bar.tsx
-├── screens/            # Telas do aplicativo
-│   ├── HomeScreen.tsx
-│   ├── ControllerScreen.tsx
-│   ├── ContactScreen.tsx
-│   ├── InfoScreen.tsx
-│   └── ProfileScreen.tsx
-├── assets/             # Imagens e recursos
-├── App.tsx             # Componente principal
-├── index.ts            # Ponto de entrada
-├── app.json            # Configuração do Expo
-├── package.json        # Dependências
-└── tsconfig.json       # Configuração TypeScript
+├── src/
+│   ├── components/          # Componentes reutilizáveis
+│   │   ├── button-nav.tsx
+│   │   ├── cards.tsx
+│   │   ├── LoadingSpinner.tsx
+│   │   └── Navigator-Bar.tsx
+│   ├── screens/            # Telas do aplicativo
+│   │   ├── HomeScreen.tsx
+│   │   ├── ControllerScreen.tsx
+│   │   ├── ContactScreen.tsx
+│   │   ├── InfoScreen.tsx
+│   │   └── ProfileScreen.tsx
+│   ├── constants/          # Constantes da aplicação
+│   │   └── colors.ts
+│   ├── hooks/              # Custom hooks
+│   │   └── useAppState.ts
+│   ├── types/              # Tipos TypeScript
+│   │   └── response.ts
+│   ├── assets/             # Imagens e recursos
+│   ├── App.tsx             # Componente principal
+│   └── index.ts            # Ponto de entrada
+├── AGENTS.md               # Configuração de agentes
+├── CLAUDE.md               # Instruções Claude
+├── app.json                # Configuração do Expo
+├── package.json            # Dependências
+├── tsconfig.json           # Configuração TypeScript
+└── README.md               # Este arquivo
 ```
 
 ## 🛠️ Instalação
